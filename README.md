@@ -20,5 +20,26 @@
   * Implement machine learning models.
   * Use resampling to attempt to address class imbalance.
   * Evaluate the performance of machine learning models.
+  
+***
+  * Oversample the data using the RandomOverSampler and SMOTE algorithms.
+  * Undersample the data using the cluster centroids algorithm.
+  * Use a combination approach with the SMOTEENN algorithm.
+
+* For each of the above, you’ll:
+
+  * Train a logistic regression classifier (from Scikit-learn) using the resampled data.
+  * Calculate the balanced accuracy score using balanced_accuracy_score from sklearn.metrics.
+  * Generate a confusion_matrix.
+  * Print the classification report (classification_report_imbalanced from imblearn.metrics).
+
+### ***Challenge Extension***
+* Use 100 estimators for both classifiers, and complete the following steps for each model:
+  * Train the model and generate predictions.
+  * Calculate the balanced accuracy score.
+  * Generate a confusion matrix.
+  * Print the classification report (classification_report_imbalanced from imblearn.metrics).
+  * For the BalancedRandomForestClassifier, print the feature importance, sorted in descending order (from most to least important feature), along with the feature score.
+
 
 ## ***Challenge Summary***
