@@ -46,16 +46,16 @@ For each of the above, you’ll:
 
 * #### ***Naive Random Oversampling***
 
-For the Naive Random Oversampling algorithm,I resampled the training data with the RandomOversampler. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.55 respectively with the balanced accuracy score of 0.65. 
+For the Naive Random Oversampling algorithm,I resampled the training data with the RandomOversampler. I got a count of 'low_risk': 51366, 'high_risk': 51366. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.55 respectively with the balanced accuracy score of 0.65. 
 
 
 * #### ***SMOTE Oversampling***
 
-For the SMOTE Oversampling algorithm,I resampled the training data with SMOTE. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.69 respectively with the balanced accuracy score 0.66. 
+For the SMOTE Oversampling algorithm,I resampled the training data with SMOTE. I got a count of 'low_risk': 51366, 'high_risk': 51366. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.69 respectively with the balanced accuracy score 0.66. 
 
 * #### ***Undersampling***
 
-For the Undersampling algorithm,I resampled the training data with ClusterCentroids resampler. I got a count of {'high_risk': 246, 'low_risk': 246}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.42 respectively with the balanced accuracy score 0.54.
+For the Undersampling algorithm,I resampled the training data with ClusterCentroids resampler. I got a count of 'high_risk': 246, 'low_risk': 246. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.42 respectively with the balanced accuracy score 0.54.
 
 * #### ***Combination (Over and Under) Sampling***
 
