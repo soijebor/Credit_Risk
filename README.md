@@ -12,7 +12,7 @@
   
 ## ***Resources***
   
-  * Data Source: LoanStats_2019Q1.csv
+  * Data Source: LoanStats_2019Q1.csv.zip
   * Software: Python 3.7.6, Anaconda 4.8.4, Jupyter Notebook 6.0.3
   
 ## ***Challenge Overview***
