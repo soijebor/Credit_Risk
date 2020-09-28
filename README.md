@@ -17,11 +17,8 @@
   
 ## ***Challenge Overview***
   
-  * Implement machine learning models.
-  * Use resampling to attempt to address class imbalance.
-  * Evaluate the performance of machine learning models.
-  
-***
+Credit risk is an inherently unbalanced classification problem, as the number of good loans easily outnumber the number of risky loans. Therefore, you’ll need to employ different techniques to train and evaluate models with unbalanced classes. Jill asks you to use imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling. Your final task is to evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
+
   * Oversample the data using the RandomOverSampler and SMOTE algorithms.
   * Undersample the data using the cluster centroids algorithm.
   * Use a combination approach with the SMOTEENN algorithm.
@@ -61,7 +58,7 @@ For the Undersampling algorithm,I resampled the training data with ClusterCentro
 
 For the Combination (Over and Under) Sampling algorithm,I resampled the training data with SMOTEENN. I got a count of 'high_risk': 51361, 'low_risk': 46653. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.58 respectively with the balanced accuracy score 0.64.
 
-In conclusion, from the four methods used the SMOTE Oversampling had the highest recall score of 0.69 while Undersampling had the lowest recall score of 0.42. For the balanced accuracy score, the SMOTE Oversampling algorithm had the highest. Although all the algorithms show poor predicting results, I will recommend the SMOTE Oversampling since it is giving the most balanced result but I recommend an increases Logistic Regression Model by using an increaes max_iter of over 200.
+In conclusion, from the four methods used the SMOTE Oversampling had the highest recall score of 0.69 while Undersampling had the lowest recall score of 0.42. For the balanced accuracy score, the SMOTE Oversampling algorithm had the highest. Although all the algorithms show poor predicting results, I will recommend the SMOTE Oversampling since it is giving the most balanced result but I recommend an increases Logistic Regression Model by using a higher max_iter of at least 200.
 
 ### ***Extension Summary***
 
