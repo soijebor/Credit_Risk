@@ -43,3 +43,23 @@ For each of the above, you’ll:
 
 
 ## ***Challenge Summary***
+Lastly, you’ll write a brief summary and analysis of the models’ performance. Describe the precision and recall scores, as well as the balanced accuracy score.
+
+#### ***Naive Random Oversampling***
+
+For the naive random oversampler model,i resampled the training data with the RandomOversampler. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.55 respectively with the balanced accuracy score of 0.65. 
+
+
+#### ***SMOTE Oversampling***
+
+For the SMOTE Oversampling model,i resampled the training data with SMOTE. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.69 respectively with the balanced accuracy score 0.66. 
+
+#### ***Undersampling***
+
+For the Undersampling,i resampled the training data with ClusterCentroids resampler. I got a count of {'high_risk': 246, 'low_risk': 246}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.42 respectively with the balanced accuracy score 0.54.
+
+#### ***Combination (Over and Under) Sampling***
+
+For the Combination (Over and Under) Sampling,i resampled the training data with SMOTEENN. I got a count of 'high_risk': 51361, 'low_risk': 46653. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.58 respectively with the balanced accuracy score 0.64.
+
+In conclusion, all 4 methods used had the same precison value of 0.99 and the SMOTE Oversampling had the highest recall score of 0.69 while Undersampling had the lowest recall score of 0.42.
