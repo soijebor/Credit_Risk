@@ -43,7 +43,6 @@ For each of the above, you’ll:
 
 
 ## ***Challenge Summary***
-Lastly, you’ll write a brief summary and analysis of the models’ performance. Describe the precision and recall scores, as well as the balanced accuracy score.
 
 #### ***Naive Random Oversampling***
 
