@@ -26,7 +26,7 @@
   * Undersample the data using the cluster centroids algorithm.
   * Use a combination approach with the SMOTEENN algorithm.
 
-* For each of the above, you’ll:
+For each of the above, you’ll:
 
   * Train a logistic regression classifier (from Scikit-learn) using the resampled data.
   * Calculate the balanced accuracy score using balanced_accuracy_score from sklearn.metrics.
