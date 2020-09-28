@@ -42,23 +42,33 @@ For each of the above, you’ll:
   * For the BalancedRandomForestClassifier, print the feature importance, sorted in descending order (from most to least important feature), along with the feature score.
 
 
-## ***Challenge Summary***
+### ***Challenge Summary***
 
 * #### ***Naive Random Oversampling***
 
-For the Naive Random Oversampling algorithm,I resampled the training data with the RandomOversampler. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.55 respectively with the balanced accuracy score of 0.65. 
+For the Naive Random Oversampling algorithm,I resampled the training data with the RandomOversampler. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.55 respectively with the balanced accuracy score of 0.65. 
 
 
 * #### ***SMOTE Oversampling***
 
-For the SMOTE Oversampling algorithm,I resampled the training data with SMOTE. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.69 respectively with the balanced accuracy score 0.66. 
+For the SMOTE Oversampling algorithm,I resampled the training data with SMOTE. I got a count of {'low_risk': 51366, 'high_risk': 51366}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.69 respectively with the balanced accuracy score 0.66. 
 
 * #### ***Undersampling***
 
-For the Undersampling algorithm,I resampled the training data with ClusterCentroids resampler. I got a count of {'high_risk': 246, 'low_risk': 246}. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.42 respectively with the balanced accuracy score 0.54.
+For the Undersampling algorithm,I resampled the training data with ClusterCentroids resampler. I got a count of {'high_risk': 246, 'low_risk': 246}. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.42 respectively with the balanced accuracy score 0.54.
 
 * #### ***Combination (Over and Under) Sampling***
 
-For the Combination (Over and Under) Sampling algorithm,I resampled the training data with SMOTEENN. I got a count of 'high_risk': 51361, 'low_risk': 46653. I Train the Logistic Regression model using the resampled data. The precision and recall average scores were 0.99 and 0.58 respectively with the balanced accuracy score 0.64.
+For the Combination (Over and Under) Sampling algorithm,I resampled the training data with SMOTEENN. I got a count of 'high_risk': 51361, 'low_risk': 46653. I used the resampled data to train the Logistic Regression model. The precision and recall average scores were 0.99 and 0.58 respectively with the balanced accuracy score 0.64.
 
 In conclusion, all 4 methods used had the same precison value of 0.99 and the SMOTE Oversampling had the highest recall score of 0.69 while Undersampling had the lowest recall score of 0.42.
+
+### ***Challenge Extension Summary***
+
+* #### ***Balanced Random Forest Classifier***
+
+For the Balanced Random Forest Classifier algorithm,I resampled the training data with RandomOversampler. The precision and recall average scores were 0.99 and 0.87 respectively with the balanced accuracy score 0.79.
+
+* #### ***Easy Ensemble AdaBoost Classifier***
+
+For the Easy Ensemble AdaBoost Classifier algorithm,I resampled the training data with RandomOversampler. The precision and recall average scores were 0.99 and 0.94 respectively with the balanced accuracy score 0.93.
