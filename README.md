@@ -63,7 +63,7 @@ For the Combination (Over and Under) Sampling algorithm,I resampled the training
 
 In conclusion, all 4 methods used had the same precison value of 0.99 and the SMOTE Oversampling had the highest recall score of 0.69 while Undersampling had the lowest recall score of 0.42.
 
-### ***Challenge Extension Summary***
+### ***Extension Summary***
 
 * #### ***Balanced Random Forest Classifier***
 
